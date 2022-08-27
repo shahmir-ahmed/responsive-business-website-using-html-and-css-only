@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Body */
+
+body{
+    /* margin: 30px 50px; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.1rem; */
+    height: 1000px;
+}
+
+/* HTML */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+
+:root{
+    --primary-color: skyblue;
+    --secondary-color: gainsboro;
+}
+
+/* Navigation Menu */
+
+/* header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: -1;
+    
+} */
+
+header{
+    /* background-color: rgb(108, 97, 97); */
+    /* background-color: #524947; */
+    /* background-color: rgba(202, 187, 195, 0.12); Transparent color */
+    /* background-color: #4A4847; */
+    background-color: #16161647;
+    position: sticky;
+    top: 0;
+    /* padding: 5px 20px; For mobile */
+    padding: 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul li a{
+    padding: 10px;
+    margin: 0 10px;
+}
+
+header ul li a:hover{
+    /* text-decoration: none; */
+    /* color: white; */
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.logo{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.active, .active:hover{
+    color: skyblue;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.go-to-top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    background-color: #16161647;
+    padding: 10px 17px;
+    border-radius: 40px;
+}
+
+/* Hero Section */
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/szechenyi-chain-bridge-g243a1d269_1920.jpg') no-repeat center center/cover;
+    width: 100%;
+    /* height: 550px; */
+    height: 577px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+.hero{
+    width: 100%;
+    /* height: 500px; */
+    height: 520px;
+    /* background-color: hotpink; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* z-index: 2; */
+}
+
+.hero-text{
+    width: 80%;
+    text-align: center;
+    /* line-height: 2rem; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+.hero-text h1{
+    font-size: 3.5rem;
+}
+
+.hero-text p{
+    font-size: 1.2rem;
+}
+
+.hero-text a{
+    background-color: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.hero-text a:hover{
+    background-color: rgb(81, 185, 226);
+}
+
+/* Yeh image kay aakhir main styling hai */
+
+/* .hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 580px;
+    width: 100%;
+    height: 50px;
+    z-index: 0;
+    background-color: red;
+    transform: translateX()
+} */
+
+/* Services Section */
+
+.services-container{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* background-color: pink; */
+}
+
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 30%;
+    box-sizing: border-box;
+    /* background-color: green; */
+    /* padding: 5px; For hover effect */
+}
+
+/* .services:hover{
+    box-shadow: 3px 3px 4px gainsboro, -3px -3px 4px gainsboro;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+.services-icon{
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 40px;
+    /* margin: 0 20px; */
+    display: inline-block;
+}
+
+.services-icon:hover{
+    background-color: #cdcdcd;
+    cursor: pointer;
+}
+
+.service{
+    width: 70%;
+}
+
+/* About Us Section */
+
+.about-us-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.about-us-section .image{
+    background-image: url('../images/men-g53dd12808_640.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: teal;
+    height: 100%;
+}
+
+.about-us{
+    background-color: rgb(215, 215, 215);
+    padding: 30px;
+}
+
+.about-us ul{
+    list-style: none;
+}
+
+.about-us ul li{
+    border-bottom: 1px solid #4A4847;
+    line-height: 3rem;
+}
+
+
+/* Clients Section */
+
+.clients-section{
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.clients img{
+    height: 100%;
+    width: 100%;
+}
+
+.client{
+    height: 120px;
+}
+
+/* Contact Us Section */
+
+.contact-us-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height: 557px; */
+}
+
+.contact-us{
+    padding: 30px;
+    /* background-color: gainsboro; */
+}
+
+.contact-us h1{
+    margin-top: 0;
+}
+
+form{
+    margin: 0 20px;
+}
+
+.form input, .form textarea{
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    /* or */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+.form input[type="submit"], .form input[type="reset"]{
+    width: 100%;
+    /* margin: auto; */
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.form input[type="submit"]:hover, .form input[type="reset"]:hover{
+    background-color: rgb(89, 191, 232);
+    cursor: pointer;
+}
+
+.form input, .form textarea:focus{
+    outline: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+#developer{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer i{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.fa-lg{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Utility Classes */
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.blue{
+    color: var(--primary-color);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.left{
+    text-align: left;
+}
+
+/* Media Query for tablet and under */
+
+@media screen and (max-width:960px) {
+
+    /* Header section  */
+    header{
+        position: static;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul{
+        margin-top: 10px;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    
+    .hero-text p{
+        font-size: 1.2rem;
+    }
+
+    /* About Us Section */
+
+    .about-us-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
+    }
+
+    /* Services section */
+
+    .services-container{
+        /* display: grid;
+        grid-template-columns: 1fr;
+        padding: 25px; */
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .services{
+         width: 100%;
+        justify-content: space-evenly;
+    }
+
+    /* Contact Us Section */
+
+    .contact-us-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
+
+
+/* Media Query for mobile */
+
+/* @media screen and (max-width:500px) {
+    .about-us-section{
+        grid-template-columns: 1fr;
+    }
+} */
